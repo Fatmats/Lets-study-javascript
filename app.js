@@ -1,115 +1,50 @@
-//TODO--İF-ELSE DÖNGÜSÜ--------------------------------
+//TODO------------DOM-----------------------------
+//!----Element ekleme,attribute ekleme,chils ekleme------
+// const main = document.createElement("div")
+// main.setAttribute("class", "container list-group")
+// main.style.maxWidth = "300px"
+// main.style.marginTop = "10px"
+// document.body.appendChild(main);
 
-//!   Kullanıcının Ehliyet Alma durumu kontrol edildi                          
-// const user=prompt("Adınız?")
-// const yas=prompt("Yaşınız?")
+// const a1 = document.createElement("a")
+// a1.setAttribute("class", "list-group-item list-group-item-action list-group-item-warning")
+// a1.setAttribute("aria-current", "true")
+// a1.innerText = "Lorem ipsuk dimsuk"
+// main.appendChild(a1)
 
-// if( yas >= 18){
-//     document.write("Sayın" +" "+ `${user}`+" "+ "Ehliyet Almaya Hak kazandınız!!") 
-// }else{
-//     document.write("Sayın"+" "+ `${user}`+" "+ "Yaşınız tutmuyor")
-// }
+// const trash = document.createElement("button")
+// trash.setAttribute("class", "btn btn-info")
+// trash.innerText = "Delete"
+// trash.style.marginLeft="10px"
+// a1.appendChild(trash)
 
-//TODO---Object-ve İf döngüsü kullanılara Kullanıcı kayıt işlemi ve giriş işlemi------------------------
+// const a2 = document.createElement("a")
+// a2.setAttribute("class", "list-group-item list-group-item-action list-group-item-warning")
+// a2.innerText = "Lorem ipsuk dimsuk"
 
-// const obj = {
-//     user: prompt("Kullanıcı Adınız?"),
-//     password: prompt("Şifreniz?")
-// };
-// const data = {
-//     user: "",
-//     password: ""
-// }
+// main.appendChild(a2)
 
-// if (obj.user.length > 0) {
-//     const veri1 = obj.user.valueOf()
-//     const veri2 = obj.password.valueOf()
-//     data.user = veri1
-//     data.password = veri2
-//     console.log(data);
-//     if (confirm("Giriş Yapmak istermisiniz?")) {
-//         UserName = prompt("Kullanıcı Adini giriniz")
-//         PasswordAdd = prompt("Şifre Giriniz")
-//         if (data.user == UserName && data.password == PasswordAdd) {
-//             alert("Hoşgeldiniz!")
-//         } else {
-//             alert("Yanliş Giriş")
-//         }
-//     } else(alert("Hoşçakalın!!"))
-// } else {}
+// const trash1 = document.createElement("button")
+// trash1.setAttribute("class", "btn btn-info")
+// trash1.innerText = "Delete"
+// trash1.style.marginLeft="10px"
+// a2.appendChild(trash1)
 
-//TODO-----------FOR & WHİLE LOOP------------------------------------------------------
-
-// const arr =["Ali","Mert","Buse"];
-
-// for (let i=0 ; i < arr.length ;i++){
-//     console.log(arr[i]);
-// } //!Basit bir For döngüsü
-
-//! Kullanıcıdan Aldığımız verileri dizide saydırdık----
-// const dizi = [];
-// let input = prompt("Lütfen Bir İsim Giriniz");
-// dizi.push(input)
-
-// for (let i = 0; i < dizi.length; i++) {
-//     console.log(dizi[i]);
-// }
-//?--VEYA Foreach yöntemiyle saydırabiliriz
-
-// dizi.forEach(function (item) {
-//     console.log(item);
-// })
-
-//!--------While döngüsü ile dizi içinde ki kullanıcıların varliğini sorguladık------------
-// const life = 0
-// const dizi = ["Ali", "Veli", "Ayşe"];
+// const a3 = document.createElement("a")
+// a3.setAttribute("class", "list-group-item list-group-item-action list-group-item-warning")
+// a3.innerText = "Lorem ipsuk dimsuk"
+// main.appendChild(a3)
 
 
-// while (life = 0) {
+//TODO------------------Removing Element-----------------------------------------
 
-//     let input = prompt("Lütfen Bir İsim Giriniz");
-//     if (dizi.includes(input)) {
-//         alert("Giriş Yapıldı")
-//         break;
-//     } else {
-//         alert("Kullanıcı Bulunamadi")
-//         break;
-//     }
-// }
+//  const list = document.querySelector("ul.list-group")
+// // el.remove();
+// const listitem= document.querySelectorAll("li.list-group-item")
 
+// del.addEventListener("click",()=>{list.removeChild(listitem[0])})
+ 
 
-//TODO      Function   Uygulamasi     
-
-// const messges = prompt("Lütfen yapacaginiz işlem kodunu giriniz! 1-Para yatırma | 2-Para çekme")
-// anahesap = 1500;
+//TODO-----------------Local Storage----------------------------------------------
 
 
-// function islem() {
-
-//     if (messges <= 1) {
-//         toplama()
-//     } else if (messges >= 2) {
-//         cikarma()
-//     }
-// }
-
-// function toplama() {
-//     const miktar2 = prompt("Yataracağınız Miktari Girin")
-//     const tpl1 = +miktar2 + anahesap
-//     return alert(`Hesabınız ${tpl1} oldu`)
-// };
-
-// function cikarma() {
-
-//     const miktar1 = prompt("Çekeceğiniz Miktari Girin")
-//     if (miktar1 < anahesap) {
-//         const tpl = anahesap - +miktar1
-//         alert(`Hesabınız ${tpl} oldu`)
-//     }
-
-//     if (miktar1 > anahesap) {
-//         alert("Yeterli Miktar Yok")
-//     }
-
-// };
-// islem()
