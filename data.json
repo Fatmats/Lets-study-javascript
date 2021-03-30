@@ -1,0 +1,31 @@
+[{
+        "firstName": "Ayşe",
+        "SecondName": "Atasoy",
+        "Age": 50,
+        "Role": "Mom"
+    },
+    {
+        "firstName": "Mustafa",
+        "SecondName": "Atasoy",
+        "Age": 52,
+        "Role": "Dad"
+    },
+    {
+        "firstName": "Cihat",
+        "SecondName": "Atasoy",
+        "Age": 27,
+        "Role": "Bro"
+    },
+    {
+        "firstName": "Şeyma",
+        "SecondName": "Atasoy",
+        "Age": 29,
+        "Role": "Sis"
+    },
+    {
+        "firstName": "Fatma",
+        "SecondName": "Atasoy",
+        "Age": 22,
+        "Role": "Me"
+    }
+   ]
